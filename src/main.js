@@ -5,12 +5,11 @@ const myRequest = "https://pokeapi.co/api/v2/pokemon/";
 
 const typeRequest = "https://pokeapi.co/api/v2/type/";
 
-const request1 = fetch("https://pokeapi.co/api/v2/pokemon/").then(response => {return response.json()});
 const request2 = fetch("https://pokeapi.co/api/v2/type/").then(response => {return response.json()});
 
 for (let i = 1; i < 151; i++) {
-  Promise.all([request1, request2])
-    .then(([data1, data2]) => {
+  fetch("https://pokeapi.co/api/v2/pokemon/" + `${i}`).then(response => {return response.json()})
+    .then((data1) => {
       const pokeElement = document.createElement("div");
       var name = data1["forms"][0]["name"];
       var png = data1["sprites"]["other"]["official-artwork"]["front_default"];
