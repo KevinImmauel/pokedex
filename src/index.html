@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/satoshi.css" />
+  </head>
+
+  <body style="font-family: Satoshi-Variable">
+    <!---NAVBAR BITCH-->
+
+    <div class="flex items-center justify-between font-medium text-3xl p-4">
+      <p>Modern Pokedex</p>
+      <div class="form-control">
+        <div class="input-group">
+          <input
+            type="text"
+            placeholder="Search…"
+            class="input input-bordered w-96"
+          />
+          <button class="btn btn-square">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- The button to open modal -->
+      <label for="my-modal-5" class="btn">open modal</label>
+    </div>
+
+    <!---cont--->
+
+    <div class="cont grid grid-cols-7"></div>
+
+    <div class="modalCont"></div>
+    <!-- Put this part before </body> tag -->
+    <script src="main.js"></script>
+  </body>
+</html>
