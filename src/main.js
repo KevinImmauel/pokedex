@@ -200,7 +200,7 @@ async function getWeakness(i) {
   strengthDiv[0].appendChild(strengthEle);
 }
 
-for (let i = 1; i < 190; i++) {
+for (let i = 1; i < 1000; i++) {
   getPokemon(i);
   getWeakness(i);
   getOtherForms(i)
